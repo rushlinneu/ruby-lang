@@ -1,0 +1,42 @@
+body {
+	background: #222;
+	color: #5a5050;
+	font-family: hallo;
+}
+
+h1 {	
+	color: #547a82;
+}
+
+h3 {
+}
+
+form input{
+	display: block;
+	background: #ccc;
+	margin-top: 5px;
+	border-style: none;
+}
+
+form textarea {
+	display: block;
+	background: #ccc;
+	border-style: none;
+}
+
+label {
+	color: #ccc;
+}
+
+input[type=number]{
+    width: 75px;
+    font-size: 18px;
+} 
+
+input[type=submit]{
+	width: 75px;
+}
+
+.messagebox {
+	color: #ccc;
+}

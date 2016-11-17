@@ -1,3 +1,15 @@
+require 'sinatra'
+require 'sinatra/reloader' if development?
+
+get '/' do 
+	erb :index
+end
+
+post '/' do
+	@message = caesar_cipher(params[:text], params[:key].to_i)
+	erb :index
+end
+
 def caesar_cipher (sentence, shift_amount)
 	sentence.split("").collect do |letter|
 		if letter.ord.between?(65,90)
@@ -20,6 +32,6 @@ def shift(position, increment, down, up)
 	end
 end
 
-input = "a Hello, this IS FROM shaunZ!"
-puts caesar_cipher(input, -1)
+# input = "a Hello, this IS FROM shaunZ!"
+# puts caesar_cipher(input, -1)
 			
