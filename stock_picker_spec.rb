@@ -1,5 +1,5 @@
 require 'rspec'
-require_relative './StockPicker'
+require_relative './stock_picker'
 
 describe '#stock_picker' do
 	it 'Correctly selects the best buy and sell date' do
